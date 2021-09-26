@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "decwrap"
+version = "0.1.0"
+description = ""
+authors = ["Zohar Malamant <zom@equinor.com>"]
+packages = [
+  { include = "decwrap", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = "^1.8.2"
+
+[tool.poetry.dev-dependencies]
+black = "^21.9b0"
+
+[tool.poetry.scripts]
+decwrap = "decwrap.main:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
