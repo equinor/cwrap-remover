@@ -7,6 +7,7 @@ class Prototype(BaseModel):
     restype: str
     argtypes: list[str]
     ctor: bool = False
+    used: bool = False
 
 
 class ClassDef(BaseModel):

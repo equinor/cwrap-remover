@@ -8,8 +8,11 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.9,<3.10"
 pydantic = "^1.8.2"
+networkx = "^2.6.3"
+scipy = "^1.7.1"
+pydot = "^1.4.2"
 
 [tool.poetry.dev-dependencies]
 black = "^21.9b0"

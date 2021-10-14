@@ -45,6 +45,7 @@ public:
 }};
 """
 
+
 def collect_types(class_def: ClassDef) -> set[str]:
     types: list[str] = []
     for _, proto, _ in class_def.prototypes:
